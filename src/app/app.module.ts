@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './routes/landing/landing.component';
 import { MenuBarComponent } from './shared/components/menu-bar/menu-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -22,6 +23,9 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    }),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

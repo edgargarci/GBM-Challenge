@@ -20,10 +20,13 @@
     "@angular/router": "^14.2.12",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
-    "ngx-translate-multi-http-loader": "^1.0.0",
     "bootstrap": "^5.2.3",
-    "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
+    "echarts": "^5.4.1",
+    "moment": "^2.29.4",
+    "ngx-echarts": "^15.0.1",
+    "ngx-translate-multi-http-loader": "^1.0.0",
+    "rxjs": "~7.5.5",
+    "tslib": "^2.4.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
