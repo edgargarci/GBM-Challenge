@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { CONSTANTS } from './shared/utils/constants';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang(CONSTANTS.DEFAULT_LANG);
+    this.translate.use(CONSTANTS.DEFAULT_LANG);
+  }
   title = 'challenge-GBM';
 }
