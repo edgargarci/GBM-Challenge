@@ -1,0 +1,9 @@
+:host {
+    width: 20%;
+    max-width: 224px;
+
+    .lateral-menu {
+        height: 100vh;
+        background: var(--bs-gray-900);
+    }
+}
