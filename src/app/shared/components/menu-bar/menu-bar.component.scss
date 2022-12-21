@@ -5,5 +5,16 @@
     .lateral-menu {
         height: 100vh;
         background: var(--bs-gray-900);
+
+        section>i {
+            font-size: 40px;
+            padding: 14px;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+        .sign-off {
+            width: 100%;
+        }
     }
 }
