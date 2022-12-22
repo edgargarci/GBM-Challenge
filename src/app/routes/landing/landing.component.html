@@ -1,2 +1,19 @@
 <p>landing works!</p>
-<div echarts [options]="options" [merge]="updateOptions"></div>
+
+
+
+
+<select class="form-select" name="language" (change)="onSelect($event)">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+</select>
+
+
+<section *ngIf="!loadingPrices">
+    <GBM-line-chart [data]="rateList"> </GBM-line-chart>
+</section>
+
+<div class="alert alert-danger alert-dismissible fade show" *ngIf="errorService">
+    <strong>Error!</strong> {{'error-message' | translate}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" (click)="errorService = false"></button>
+</div>
