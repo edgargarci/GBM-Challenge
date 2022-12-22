@@ -2,5 +2,6 @@
     "menu-lateral": {
         "close-session": "Sign off"
     },
-    "welcome-ipc": "Welcome to IPC"
+    "welcome-ipc": "Welcome to IPC",
+    "error-message": "A problem has been occurred while submitting your data, please try later"
 }
