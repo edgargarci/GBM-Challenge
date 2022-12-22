@@ -9,6 +9,7 @@ import { LandingComponent } from './routes/landing/landing.component';
 import { MenuBarComponent } from './shared/components/menu-bar/menu-bar.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgxEchartsModule } from 'ngx-echarts';
+import { LineChartComponent } from './shared/components/line-chart/line-chart.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -17,7 +18,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   declarations: [
     AppComponent,
     LandingComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    LineChartComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   providers: [],
   bootstrap: [AppComponent],
   exports: [
-    MenuBarComponent
+    MenuBarComponent,
+    LineChartComponent
   ]
 })
 
