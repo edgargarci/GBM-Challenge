@@ -12,5 +12,6 @@ export class AppComponent {
     this.translate.setDefaultLang(CONSTANTS.DEFAULT_LANG);
     this.translate.use(CONSTANTS.DEFAULT_LANG);
   }
+  public userName = "Jean Francs"
   title = 'challenge-GBM';
 }
