@@ -19,8 +19,9 @@ export class LandingComponent implements OnInit {
 
   constructor(
     private _priceMarketRatesService: PriceMarketRatesService,
-    private _translateService: TranslateService
-  ) { }
+  ) {
+
+  }
 
   ngOnInit(): void {
     this._getMarketRates();
@@ -42,13 +43,5 @@ export class LandingComponent implements OnInit {
     });
   }
 
-  public onSelect(lang: any): void {
 
-    console.log(lang);
-
-    localStorage.setItem('language', lang);
-    this._translateService.use(lang);
-
-
-  }
 }

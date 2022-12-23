@@ -1,14 +1,3 @@
-<p>landing works!</p>
-
-
-
-
-<select class="form-select" name="language" (change)="onSelect($event)">
-    <option value="en">English</option>
-    <option value="es">Español</option>
-</select>
-
-
 <section *ngIf="!loadingPrices">
     <GBM-line-chart [data]="rateList"> </GBM-line-chart>
 </section>
