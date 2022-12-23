@@ -16,5 +16,16 @@
         .sign-off {
             width: 100%;
         }
+
+        .nick-name {
+            color: var(--bs-gray-200);
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #00062b;
+            border-radius: 35px;
+        }
     }
 }
