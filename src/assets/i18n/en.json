@@ -3,5 +3,8 @@
         "close-session": "Sign off"
     },
     "welcome-ipc": "Welcome to IPC",
-    "error-message": "A problem has been occurred while submitting your data, please try later"
+    "error-message": "A problem has been occurred while submitting your data, please try later",
+    "es": "Spanish",
+    "en": "English",
+    "select-language": "Language"
 }
