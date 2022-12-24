@@ -3,6 +3,7 @@
         "close-session": "cerrar sesión"
     },
     "welcome-ipc": "Bienvenido al IPC",
+    "welcome": "Bienvenido",
     "error-message": "Ocurrió un problema al consumir el servicio, intente mas tarde",
     "es": "Español",
     "en": "Inglés",
