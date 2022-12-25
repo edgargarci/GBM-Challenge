@@ -3,5 +3,9 @@ export const CONSTANTS = {
     LANGS_LIST: ['en', 'es'],
     REG_EXP: {
         SPACE: /\s/g
+    },
+    TIME_VALUES: {
+        MINUTES: 'minutes',
+        SECONDS: 'seconds'
     }
 }
