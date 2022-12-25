@@ -7,5 +7,6 @@
     "error-message": "A problem has been occurred while submitting your data, please try later",
     "es": "Spanish",
     "en": "English",
-    "select-language": "Language"
+    "select-language": "Language",
+    "ipc": "Prices and quotes index"
 }

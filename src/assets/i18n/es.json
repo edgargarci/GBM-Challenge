@@ -7,5 +7,6 @@
     "error-message": "Ocurrió un problema al consumir el servicio, intente mas tarde",
     "es": "Español",
     "en": "Inglés",
-    "select-language": "idioma"
+    "select-language": "idioma",
+    "ipc": "Indice precios y cotizaciones"
 }
