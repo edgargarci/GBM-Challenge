@@ -4,6 +4,8 @@
         <label class="text-bg-dark py-md-2 text-center"> {{'welcome-ipc' | translate}}</label>
         <h6 class="text-bg-dark py-md-2 text-center">{{'welcome' | translate}}</h6>
 
+        <img src="{{additionalInfo.picture}}" alt="">
+
         <section class="border-bottom border-top d-flex pb-3 pt-3 w-100 align-items-center justify-content-center">
             <label class="nick-name text-uppercase">
                 {{nick}}
@@ -20,23 +22,10 @@
                     [selected]="lang === translate.currentLang">{{ lang | translate
                     }}</option>
             </select>
-
         </section>
-
-
-
-        <ul>
-            <li>
-
-            </li>
-        </ul>
     </section>
 
-    <button class="btn btn-light sign-off text-center w-100">
+    <button class="btn btn-light sign-off text-center w-100" (click)="closeSession()">
         <i class="icon-exit pe-1"></i><label>{{'menu-lateral.close-session' | translate}}</label>
     </button>
-
-
-
-
 </nav>
