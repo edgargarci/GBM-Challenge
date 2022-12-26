@@ -1,3 +1,7 @@
 :host {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 var(--bs-gray-500);
 }

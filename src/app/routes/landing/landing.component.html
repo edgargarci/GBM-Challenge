@@ -1,4 +1,6 @@
-<section *ngIf="!loadingPrices">
+<app-menu-bar [user]="userName" [additionalInfo]="additionalInfo" *ngIf="userName != ''"></app-menu-bar>
+
+<section class="d-flex w-100 p-3" *ngIf="!loadingPrices">
     <GBM-line-chart [data]="rateList"> </GBM-line-chart>
 </section>
 
