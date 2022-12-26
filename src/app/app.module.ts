@@ -10,6 +10,8 @@ import { MenuBarComponent } from './shared/components/menu-bar/menu-bar.componen
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { LineChartComponent } from './shared/components/line-chart/line-chart.component';
+import { AuthModule } from '@auth0/auth0-angular';
+import { LoginComponent } from './routes/login/login.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -19,7 +21,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     AppComponent,
     LandingComponent,
     MenuBarComponent,
-    LineChartComponent
+    LineChartComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,11 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    AuthModule.forRoot({
+      domain: 'dev-f02qnk3ju7ajvsrv.us.auth0.com',
+      clientId: 'ptnkn2KTeMLTfLuO2N6MSwa1MfnrHFwx'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
