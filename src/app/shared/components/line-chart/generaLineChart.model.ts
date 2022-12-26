@@ -88,7 +88,7 @@ export class GenerateLineChartModule implements lineChart {
                     xAxisIndex: [0],
                     filterMode: 'filter',
                     start: 3,
-                    end: 95,
+                    end: 100,
                     brushSelect: true,
                     realtime: true
                 },
