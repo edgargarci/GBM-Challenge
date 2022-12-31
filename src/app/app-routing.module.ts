@@ -5,7 +5,7 @@ import { LoginComponent } from './routes/login/login.component';
 
 const routes: Routes = [{
   path: '',
-  redirectTo: 'login',
+  redirectTo: 'LandingComponent',
   pathMatch: 'full'
 },
 {

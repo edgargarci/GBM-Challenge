@@ -34,24 +34,22 @@ export class LandingComponent implements OnInit {
 
     this.auth.isAuthenticated$.subscribe({
       next: (isAuthenticated: boolean) => {
-        console.log(isAuthenticated);
-
         !isAuthenticated ? this._redirectToLogin() : this._redirectToLanding();
         this._getUser();
       }, error: (error) => {
         console.error(error);
-      }, complete: () => {
-
       }
     });
   }
 
   private _getUser() {
     this.auth.getUser().subscribe({
-      next: (e) => {
-        const userInfo = new LoginInfoModule(e);
+      next: (user) => {
+        const userInfo = new LoginInfoModule(user);
         this.userName = userInfo.name;
         this.additionalInfo = userInfo;
+        console.log(this.additionalInfo);
+
       }
     });
   }
